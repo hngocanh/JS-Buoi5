@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="col-sm-6 col-12">
+      <div class="card">
+        <div class="card-header font-weight-bold">
+          Bài 1: Quản lý tuyển sinh
+        </div>
+        <div class="card-body">
+          <div class="form-group ml-0">
+            <label for="">Nhập điểm chuẩn</label>
+            <input type="number" class="form-control" id="diemChuan" />
+          </div>
+          <div class="form-group">
+            <label>Chọn Đối Tượng</label>
+            <select class="form-control" id="doiTuong">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Chọn Khu Vực</label>
+            <select class="form-control" id="khuVuc">
+              <option value="0">X</option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">C</option>
+            </select>
+          </div>
+          <div class="form-group ml-0 mt-2">
+            <label for="">Nhập điểm môn thứ 1</label>
+            <input type="number" class="form-control" id="diemMonThu1" />
+          </div>
+          <div class="form-group mt-2">
+            <label for="">Nhập điểm môn thứ 2</label>
+            <input type="number" class="form-control" id="diemMonThu2" />
+          </div>
+          <div class="form-group mt-2">
+            <label for="">Nhập điểm môn thứ 3</label>
+            <input type="number" class="form-control" id="diemMonThu3" />
+          </div>
+          <button class="btn btn-primary mt-3" onclick="tinhDiemTongKet()">
+            Kết Quả
+          </button>
+        </div>
+        <div class="card-footer text-muted" id="ketQuaTuyenSinh"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/BaitapBuoi5.js"></script>
+  </body>
+</html>
