@@ -66,6 +66,69 @@
         <div class="card-footer text-muted" id="ketQuaTuyenSinh"></div>
       </div>
     </div>
+
+    <br /><br />
+
+    <div class="col-sm-6 col-12">
+      <div class="card">
+        <div class="card-header font-weight-bold">Bài 2: Tính tiền điện</div>
+        <div class="card-body">
+          <div class="form-group ml-0">
+            <label for="">Nhập số kW</label>
+            <input type="number" class="form-control" id="kW" />
+          </div>
+          <button class="btn btn-primary mt-3" onclick="tinhTienDien()">
+            Kết Quả
+          </button>
+        </div>
+        <div class="card-footer text-muted" id="tienDien"></div>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="col-sm-6 col-12">
+      <div class="card">
+        <div class="card-header font-weight-bold">Bài 4: Tính tiền cáp</div>
+        <div class="card-body">
+          <div class="form-group ml-0">
+            <label for="">Nhập mã khách hàng</label>
+            <input type="number" class="form-control" id="maKH" />
+          </div>
+          <select name="" id="loaiKH" class="form-control my-2">
+            <option value="">Chọn loại khách hàng</option>
+            <option value="caNhan">Khách hàng cá nhân</option>
+            <option value="doanhNghiep">Khách hàng doanh nghiệp</option>
+          </select>
+          <div class="my-3" id="connect">
+            <label for="" class="form-label">Nhập số kết nối</label>
+            <input
+              type="number"
+              name=""
+              id="soKetNoi"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <div class="my-3">
+            <label for="" class="form-label">Nhập số kênh cao cấp</label>
+            <input
+              type="number"
+              name=""
+              id="soKenhCaoCap"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <button class="btn btn-primary mt-3" onclick="tinhTienCap()">
+            Kết Quả
+          </button>
+        </div>
+        <div class="card-footer text-muted" id="cableCost"></div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
